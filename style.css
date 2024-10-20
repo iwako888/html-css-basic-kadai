@@ -26,7 +26,7 @@ main{
 .contents{
   border: solid 3px rgb(238, 204, 204);
   flex-basis: 25%;
-  padding: 10px 15px;
+  padding: 10px 15px;    
   margin: 20px 0px;
   text-align: center;
   display: flex;
@@ -66,34 +66,24 @@ a {
   color: rgb(255, 255, 255);
 }
 
-a :visited{
+a:visited{
   color: rgb(193, 234, 251)
 }
 
-a :hover{
+a:hover{
   color: rgb(245, 178, 168)
 }
 
 @media screen and (max-width: 768px){
-  #parent{
+  #parent, .contents h2{
    flex-direction: column;
+   font-size: 30px;
   }
 }
 
 @media screen and (min-width: 768px){
-  #parent{
+  #parent, .contents p{
     flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .contents h2{
-    font-size: 30px;
-  }
-}
-
-@media screen and (max-width: 768px){
-  .contents p{
     font-size: 25px;
   }
 }
