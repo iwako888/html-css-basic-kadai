@@ -79,10 +79,13 @@ a:hover{
   color: rgb(245, 178, 168);
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 768px){
   #parent, .contents h2{
    flex-direction: column;
    font-size: 30px;
+  }
+  .contents p{
+    font-size: 25px;
   }
 }
 
